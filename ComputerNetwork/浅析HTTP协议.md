@@ -35,7 +35,7 @@ HTTP报文分为请求报文和响应报文，二者的格式非常相似。都�
 
 服务器发回给客户端的叫响应报文
 
-> <版本>< 状态吗 ><状态信息>
+> <版本>< 状态码 ><状态信息>
 > <首部>
 > 
 > <主体>
@@ -283,6 +283,8 @@ Cookie支持跨域名访问，例如将domain属性设置为“.biaodianfu.com�
 
 参考地址：
 [http://justsee.iteye.com/blog/1570652](http://justsee.iteye.com/blog/1570652)
+
 [http://www.lai18.com/content/407204.html](http://www.lai18.com/content/407204.html)
+
 [http://m.blog.csdn.net/article/details?id=51336564](http://m.blog.csdn.net/article/details?id=51336564)
 
