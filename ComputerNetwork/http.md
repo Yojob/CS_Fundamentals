@@ -247,7 +247,7 @@ Cookies是服务器在本地机器上存储的小段文本并随每一个请求�
 ### 内容
 
 cookie的内容主要包括：名字，值，过期时间，路径和域。路径与域一起构成cookie的作用范围。
-
+![logo](http://typora.io/img/favicon-128.png)
 
 
 ### 过期时间
