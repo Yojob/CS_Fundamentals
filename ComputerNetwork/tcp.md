@@ -27,13 +27,11 @@ TCP与UDP作为运输层的协议，经常被用来比较，它们有着各自�
 
 ## 2、TCP报文
 
- ![pic3](pic\pic3.png)
+ ![pic3](https://github.com/Yojob/CS_Fundamentals/blob/master/ComputerNetwork/pic/pic3.png?raw=true)
 
 上图为TCP报文段结构，一般TCP的首部是20个字节，而UDP只有8个字节。
 
 具体的含义不用每个都知道，了解几个比较常用的就可以了。
-
-
 
 ### 源端口与目的端口
 
@@ -63,7 +61,7 @@ RST、SYN、FIN用于连接建立和拆除，也就是三次握手和四次挥�
 
 接下来就是最著名的TCP三次握手
 
- ![pic4](pic\pic4.png)
+ ![pic4](https://github.com/Yojob/CS_Fundamentals/blob/master/ComputerNetwork/pic/pic4.png?raw=true)
 
 
 
@@ -111,7 +109,7 @@ SYN Flood是当前最流行的DoS（拒绝服务攻击）与DDoS（分布式拒�
 
 接下来看一下TCP断开连接的过程，需要注意的一点是下图中的客户端与服务器不是绝对的，实际情况中任何一端都可以请求中断，我们习惯把先请求中断的叫做客户端。
 
- ![pic5](pic\pic5.png)
+ ![pic5](https://github.com/Yojob/CS_Fundamentals/blob/master/ComputerNetwork/pic/pic5.png?raw=true)
 
 * 首先，客户端发送一个特殊的报文段，将首部中的FIN标志位置为1，说明客户端已经没有数据要发送了。该报文段也叫FIN报文段。
 * 服务器接受到FIN报文段后，回复一个确认报文段。但是服务器仍然可以向客户端发送数据。
@@ -125,13 +123,13 @@ SYN Flood是当前最流行的DoS（拒绝服务攻击）与DDoS（分布式拒�
 
 
 
- ![pic7](pic\pic7.png)
+ ![pic7](https://github.com/Yojob/CS_Fundamentals/blob/master/ComputerNetwork/pic/pic7.png?raw=true)
 
 
 
 而Server端所经历的过程如下：
 
- ![pic6](pic\pic6.png)
+ ![pic6](https://github.com/Yojob/CS_Fundamentals/blob/master/ComputerNetwork/pic/pic6.png?raw=true)
 
 
 
