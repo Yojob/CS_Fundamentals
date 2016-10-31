@@ -88,14 +88,14 @@ head方法与get方法类似，但是服务器响应中没有主体部分，一�
 #### get与post的区别
 
 1.  get用于从服务器获取资源，post重点在于向服务器发送数据
-2. get传输数据是通过URL请求，以field（字段）= value的形式，置于URL后，并用"?"连接，多个请求数据间用"&"连接，如http://127.0.0.1/Test/login.action?name=admin&password=admin，这个过程用户是可见的；
-   post传输数据通过Http的post机制，将字段与对应值封存在请求实体中发送给服务器，这个过程对用户是不可见的；
-3. Get传输的数据量小，因为受URL长度限制，但效率较高；
-   Post可以传输大量数据，所以上传文件时只能用Post方式；
-4. get是不安全的，因为URL是可见的，可能会泄露私密信息，如密码等；
-   post较get安全性较高；
-5. get方式只能支持ASCII字符，向服务器传的中文字符可能会乱码。
-   post支持标准字符集，可以正确传递中文字符。
+2.  get传输数据是通过URL请求，以field（字段）= value的形式，置于URL后，并用"?"连接，多个请求数据间用"&"连接，如http://127.0.0.1/Test/login.action?name=admin&password=admin，这个过程用户是可见的；
+    post传输数据通过Http的post机制，将字段与对应值封存在请求实体中发送给服务器，这个过程对用户是不可见的；
+3.  Get传输的数据量小，因为受URL长度限制，但效率较高；
+    Post可以传输大量数据，所以上传文件时只能用Post方式；
+4.  get是不安全的，因为URL是可见的，可能会泄露私密信息，如密码等；
+    post较get安全性较高；
+5.  get方式只能支持ASCII字符，向服务器传的中文字符可能会乱码。
+    post支持标准字符集，可以正确传递中文字符。
 
 
 
@@ -248,7 +248,7 @@ Cookies是服务器在本地机器上存储的小段文本并随每一个请求�
 
 cookie的内容主要包括：名字，值，过期时间，路径和域。路径与域一起构成cookie的作用范围。
 
-![logo](https://github.com/Yojob/CS_Fundamentals/blob/master/ComputerNetwork/pic/pic1.png)
+![logo](https://github.com/Yojob/CS_Fundamentals/blob/master/ComputerNetwork/pic/pic1.png?raw=true)
 
 
 ### 过期时间
@@ -265,7 +265,7 @@ session机制是一种服务器端的机制，服务器使用一种类似于散�
 
 当程序需要为某个客户端的请求创建一个session的时候，服务器首先检查这个客户端的请求里是否已包含了一个session标识 - 称为session id，如果已包含一个session id则说明以前已经为此客户端创建过session，服务器就按照session id把这个session检索出来使用（如果检索不到，可能会新建一个），如果客户端请求不包含session id，则为此客户端创建一个session并且生成一个与此session相关联的session id，session id的值应该是一个既不会重复，又不容易被找到规律以仿造的字符串，这个session id将被在本次响应中返回给客户端保存。
 
-![logo](https://github.com/Yojob/CS_Fundamentals/blob/master/ComputerNetwork/pic/pic2.png)
+![logo](https://github.com/Yojob/CS_Fundamentals/blob/master/ComputerNetwork/pic/pic2.png?raw=true)
 
 ### sessionid的存储
 
